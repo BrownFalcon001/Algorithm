@@ -1,6 +1,8 @@
 //recursive approach
 //we can do the same function using iterative approach.
 //As we know that iterative approach is always faster than recursive I will suggest to use iterative approach
+
+///complexity = O(logb)
 #include<bits/stdc++.h>
 using namespace std;
 
