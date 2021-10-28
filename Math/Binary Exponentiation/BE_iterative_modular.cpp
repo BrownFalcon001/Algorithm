@@ -1,6 +1,8 @@
 //iterative approach
 // it is way faster than recursive approach
 
+///complexity = O(logb)
+
 #include<bits/stdc++.h>
 using namespace std;
 
