@@ -6,8 +6,8 @@ using namespace std;
 #define int long long
 
 int gcd(int a, int b) {
-    if(a==0) return b;
-    return gcd(b%a, a);
+    if(b==0) return a;
+    return gcd(b, a%b);
 }
 
 signed main() {
