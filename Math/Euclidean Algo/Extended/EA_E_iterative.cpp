@@ -11,14 +11,9 @@ int egcd(int a, int b, int &x, int &y) {
     int x1 = 0, y1 = 1;
     while(b) {
         int q = a/b;
-        x=x1;
-        x1 = x-q*x1;
-        
-        y=y1;
-        y1 = y-q*y1;
-        
-        a = a%b;
-        swap(a, b);
+        tie(x, x1) = make_tuple(x1, x-q*x1);
+        tie(y, y1) = make_tuple(y1, y-q*y1);
+        tie(a, b) = make_tuple(b, a%b);
     }
     return a;
 }
