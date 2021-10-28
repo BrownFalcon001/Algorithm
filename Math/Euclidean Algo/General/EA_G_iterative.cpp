@@ -1,3 +1,6 @@
+//faster than first implementation
+//because it is iterative and first one was recursive
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
