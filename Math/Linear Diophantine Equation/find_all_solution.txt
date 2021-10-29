@@ -1,0 +1,13 @@
+Let, ax+by = c -----(i)
+
+and we know one set (x0, y0) for which equation (i) satisfied;
+
+	ax0+by0 = c;
+        
+	a(x0+b/g)+b(y0-a/g) = c } will not break the equality
+
+so all solutions are, 
+	
+	x = x0 + k*b/g  |
+			| } is the all possible solution fo a diophantine equation
+	y = y0 - k*y/g	|
