@@ -1,0 +1,14 @@
+we have to give some condition of the answer will be negative infinity
+
+The idea is simple, we will find any solution of diophentine equation and after that shift it to satisfy some conditions
+
+Let, 
+    x' + y' is minimum
+    x' = x + k*b/g
+    y' = y -k*a/g
+now,
+    x' + y' = x + y + k*(b-a)/g 
+
+if a>b, k should be largest possible
+if b>a, k should be smallest possible
+if b==a, there have same x+y for all solution
