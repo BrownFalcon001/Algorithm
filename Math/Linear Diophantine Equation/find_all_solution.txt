@@ -10,4 +10,4 @@ so all solutions are,
 	
 	x = x0 + k*b/g  |
 			| } is the all possible solution fo a diophantine equation
-	y = y0 - k*y/g	|
+	y = y0 - k*a/g	|
