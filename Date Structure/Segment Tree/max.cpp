@@ -1,6 +1,6 @@
 //max value of a segment and the number of occurrence of that max value on that segment
 
-//time complexity = O(logn) for each function call(not build which need O(n))
+//time complexity = O(logn) for each function call(not build which needs O(n))
 
 
 #include <bits/stdc++.h>
