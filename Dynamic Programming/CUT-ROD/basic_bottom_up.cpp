@@ -1,3 +1,4 @@
+//time complexity = O(n^2)
 /*
  *   author: brownFalcon
  */
