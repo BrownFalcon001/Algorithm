@@ -68,7 +68,7 @@ int cutRod(int a[], int n) {
     FOR(i, 1, n+1) {
         int q = -1;
         FOR(j, 1, i+1) {
-            if(q<a[i]+dp[i-j]) {
+            if(q<a[j]+dp[i-j]) {
                 save[i] = j;
                 q = a[j]+dp[i-j];
             }
