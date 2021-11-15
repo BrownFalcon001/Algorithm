@@ -53,6 +53,24 @@ void printTrie(Node *u = root, string s = "") {
         }
     }
 }
+Node* remove(Node *v, string key, int depth=0) {
+    if(v==0) return 0;
+    if(key.size()== depth) {
+        if(v->end) v->end = false;
+        if(isEmpty(v)) {
+            delete v;
+            v = 0;
+        }
+        return v;
+    }
+    int index = key[depth]-'a';
+    v->a[index] = remove(v->a[index], key, depth+1);
+    if(isEmpty(v)&&v->end == false) {
+        delete v;
+        v = NULL;
+    }
+    return v;
+}
 signed main() {
     int n;cin>>n;
     root = new Node;
