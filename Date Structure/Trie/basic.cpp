@@ -53,6 +53,12 @@ void printTrie(Node *u = root, string s = "") {
         }
     }
 }
+bool isEmpty(Node *cur) {
+    for(int i=0;i<26;i++) {
+        if(cur->a[i]==NULL) return false;
+    }
+    return true;
+}
 Node* remove(Node *v, string key, int depth=0) {
     if(v==0) return 0;
     if(key.size()== depth) {
