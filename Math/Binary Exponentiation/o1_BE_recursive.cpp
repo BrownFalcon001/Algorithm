@@ -1,21 +1,23 @@
-//recursive approach
-//we can do the same function using iterative approach.
-//As we know that iterative approach is always faster than recursive I will suggest to use iterative approach
+/*
+* Author: BrownFalcon
+*/
 
-///time complexity = O(logb)
-///space complexity = O(logb)
+// Time Complexity O(log n)
+// Space Complexity O(log n)
+
 #include<bits/stdc++.h>
 using namespace std;
 
-int power(int a, int b) {
-    if(b==0) return 1;
-    int temp= power(a, b/2);
-    int result = temp*temp;
-    if(b%2==1) result*=a;
-    return result; 
+long long power(long long a, long long n) {
+    if(n==0) return 1;
+    long long temp = power(a, n/2);
+    if(n%2==0)  return temp * temp;
+    return temp *temp * a;
 }
 
 int main() {
-    int a, b;cin>>a>>b;
-    cout<<power(a,b)<<endl;
+    long long a, n;cin>>a>>n;
+    // determine power(a,n)
+    long long ans = power(a, n);
+    cout<<ans<<endl;
 }
