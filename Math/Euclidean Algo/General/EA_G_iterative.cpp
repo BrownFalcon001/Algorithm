@@ -1,24 +1,24 @@
-//faster than first implementation
-//because it is iterative and first one was recursive
+/*
+* Author: BrownFalcon
+*/
 
-///time complexity = O(log(min(a, b)))
+// Time Complexity : O(log (min(a, b)))
+// Space Complexity : O(1)
 
 #include<bits/stdc++.h>
 using namespace std;
-#define int long long
 
 int gcd(int a, int b) {
+    if(b==0) return a;
+    return gcd(b, a%b);
+}
+// lcm = a*b/gcd(a, b) 
+int main() {
+    int a, b;
+    cin>>a>>b;
     while(b) {
-        a=a%b;
+        a = a%b;
         swap(a, b);
     }
-    return a;
-}
-int lcm(int a ,int b) {
-    return a*b/gcd(a,b);
-}
-
-signed main() {
-    int a, b;cin>>a>>b;
-    cout<<gcd(a, b)<<endl;
+    cout<<a<<endl;
 }
