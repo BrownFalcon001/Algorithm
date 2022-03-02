@@ -1,21 +1,20 @@
-//there are another implemented algo which done the same stuff iteratively
-//you will find that in the same folder
+/*
+* Author: BrownFalcon
+*/
 
-///time complexity = O(log(min(a, b)))
+// Time Complexity : O(log b)
+// Space Complexity : O(log b)
 
 #include<bits/stdc++.h>
 using namespace std;
-#define int long long
 
 int gcd(int a, int b) {
     if(b==0) return a;
     return gcd(b, a%b);
 }
-int lcm(int a ,int b) {
-    return a*b/gcd(a,b);
-}
-
-signed main() {
-    int a, b;cin>>a>>b;
-    cout<<gcd(a,b)<<endl;
+// lcm = a*b/gcd(a, b) 
+int main() {
+    int a, b;
+    cin>>a>>b;
+    cout<<gcd(a, b)<<endl;
 }
