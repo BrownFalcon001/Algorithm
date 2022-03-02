@@ -3,6 +3,7 @@
 //As we know that iterative approach is always faster than recursive I will suggest to use iterative approach
 
 ///time complexity = O(logb)
+///space complexity = O(logb)
 #include<bits/stdc++.h>
 using namespace std;
 
