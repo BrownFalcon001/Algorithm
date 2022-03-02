@@ -2,8 +2,8 @@
 * Author: BrownFalcon
 */
 
-// Time Complexity : O(log b)
-// Space Complexity : O(log b)
+// Time Complexity : O(log (min(a, b)))
+// Space Complexity : O(log (min(a, b)))
 
 #include<bits/stdc++.h>
 using namespace std;
