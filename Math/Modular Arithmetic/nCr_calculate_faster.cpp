@@ -40,12 +40,12 @@ int main() {
     while(t--) {
         ll n,r;cin>>n>>r;
         // nCr = n!/(r!(n-r)!)
-        ll nfact = factorial[n];
-        ll rfact = factorial[r];
-        ll nrfact = factorial[n-r];
-        ll denom = (rfact * nrfact) % mod;
-        denom = power(denom, mod-2); // we know a^(-1) % prime= a^(p-2) % prime
-        ll ans = (nfact * denom) % mod;
+        ll nfact = factorial[n]; // O(1)
+        ll rfact = factorial[r]; // O(1)
+        ll nrfact = factorial[n-r]; // O(1)
+        ll denom = (rfact * nrfact) % mod; // O(1)
+        denom = power(denom, mod-2); // we know a^(-1) % prime= a^(p-2) % prime // O(log MOD)
+        ll ans = (nfact * denom) % mod; // O(1)
         cout<<ans<<endl;
     }
 
