@@ -6,7 +6,7 @@ there are T(<=10^5) test cases
 #include<bits/stdc++.h>
 using namespace std;
 
-const int MAXN = 1e5+2;
+const int MAXN = 1e3+2;
 bool primes[MAXN];
 set<long long> ans;
 
