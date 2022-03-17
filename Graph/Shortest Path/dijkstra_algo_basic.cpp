@@ -22,7 +22,6 @@ void dijkstra(int src, int n) {
 
     while(!ms.empty()) {
         int u = ms.begin()->second;
-        int w = ms.begin()->first;
         ms.erase(ms.begin());
         if(vis[u]) continue;
         vis[u] = 1;
