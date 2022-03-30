@@ -1,5 +1,8 @@
 // C++ program to demonstrate working of Meet in the
 // Middle algorithm for maximum subset sum problem.
+
+// Time Complexity: O(2^(n/2)log(2^(n/2)))
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long int ll;
